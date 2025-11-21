@@ -1,7 +1,7 @@
 // import React ,{useEffect, useState} from 'react'
 
 import './about.css'
-import AboutImg from '../../assets/Bindisha_profile_pic.jpg'
+import AboutImg from '../../assets/Parimal_DP.png'
 import CV from '../../assets/BINDISHA_PARMAR_CV_SOFTWARE.pdf'
 import Info from './Info'
 
