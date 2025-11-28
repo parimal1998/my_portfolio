@@ -19,13 +19,15 @@ const About = () => {
                     <Info />
 
                     <p className="about__description" style={{
-    color: "black",
+    color: "var(--title-color)",
     background: "transparent",
-    border: "1px black", // Border around the text
-    padding: "10px", // Space inside the box
-    display: "inline-block", // Prevents full-width stretching
-    borderRadius: "5px", // Rounded corners
-    backgroundColor: "#ffff", }}>
+    border: "1px solid var(--border-color)",
+    padding: "10px",
+    display: "inline-block",
+    borderRadius: "5px",
+    backgroundColor: "var(--container-color)",
+    transition: "background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease"
+    }}>
 
                 <p style={{textAlign: "justify"}}>I am a Data Analyst with strong skills in Python, SQL, and data visualisation, passionate about turning complex datasets into clear, actionable insights. With experience across analytics, automation, and BI reporting, 
                 I enjoy solving real business problems and building data-driven solutions that create measurable impact.</p>

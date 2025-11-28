@@ -12,27 +12,30 @@ import Skills from './components/skills/Skills'
 import Testimonials from './components/testimonials/Testimonials'
 import Work from './components/work/Work'
 import CloudHoverEffect from "./CloudHoverEffect"; // Import the new component
+import { ThemeProvider } from './contexts/ThemeContext'
 
 const App = () => {
   return (
-    <div>
-       <CloudHoverEffect />
-      <Header />
+    <ThemeProvider>
+      <div>
+         <CloudHoverEffect />
+        <Header />
 
-      <main className="main">
-        <Home />
-        <About />
-        <Skills />
-        <Services />
-        <Qualification />
-        <Work />
-        <Testimonials />
-        <Contact />
-      </main>
+        <main className="main">
+          <Home />
+          <About />
+          <Skills />
+          <Services />
+          <Qualification />
+          <Work />
+          <Testimonials />
+          <Contact />
+        </main>
 
-      <Footer />
-      <ScrollUp />
-    </div>
+        <Footer />
+        <ScrollUp />
+      </div>
+    </ThemeProvider>
   )
 }
 

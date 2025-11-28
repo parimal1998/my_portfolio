@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './header.css'
+import { useTheme } from '../../contexts/ThemeContext'
 
 const Header = () => {
+	const { theme, toggleTheme } = useTheme();
 	/*=============== Change Background Header ===============*/
 	window.addEventListener("scroll", function () {
 		const header = document.querySelector(".header");
@@ -24,6 +26,15 @@ const Header = () => {
 
 			<nav className="nav container">
 				<a href="index.html" className="nav__logo">Parimal Sawant</a>
+
+				<button 
+					className="theme-toggle" 
+					onClick={toggleTheme}
+					aria-label="Toggle theme"
+					title={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+				>
+					<i className={theme === 'light' ? 'uil uil-moon' : 'uil uil-sun'}></i>
+				</button>
 
 				<div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
 					<ul className="nav__list grid">

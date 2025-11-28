@@ -1,5 +1,7 @@
 .testimonial__container {
   width: 750px;
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
 .testimonial__container .swiper-slide {
@@ -9,7 +11,8 @@
 
 .testimonial__card {
   background-color: var(--container-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease-in-out;
   padding: 1.5rem 2rem;
   border-radius: 1.5rem;
   background: transparent;
@@ -52,13 +55,93 @@
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
+/* For small laptop (1024px) */
+@media screen and (max-width: 1024px) {
+  .testimonial__container {
+    width: 90%;
+    max-width: 700px;
+  }
+}
+
+/* For large devices (992px) */
 @media screen and (max-width: 992px) {
   .testimonial__container {
     width: initial;
+    max-width: 100%;
   }
 
   .testimonial__card {
     padding: 1.25rem 1.5rem;
+    min-height: 220px;
+  }
+}
+
+/* For tablet devices (768px) */
+@media screen and (max-width: 768px) {
+  .testimonial__container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .testimonial__card {
+    padding: 1.25rem 1.25rem;
+    min-height: 200px;
+  }
+
+  .testimonial__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonial__name {
+    font-size: var(--small-font-size);
+  }
+
+  .testimonial__description {
+    font-size: var(--smaller-font-size);
+  }
+}
+
+/* For mobile devices (480px) */
+@media screen and (max-width: 480px) {
+  .testimonial__card {
+    padding: 1rem;
+    min-height: 180px;
+  }
+
+  .testimonial__img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .testimonial__name {
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-0-5);
+  }
+
+  .testimonial__description {
+    font-size: var(--smaller-font-size);
+    line-height: 1.4;
+  }
+}
+
+/* For small devices (350px) */
+@media screen and (max-width: 350px) {
+  .testimonial__card {
+    padding: 0.875rem;
+    min-height: 160px;
+  }
+
+  .testimonial__img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonial__name {
+    font-size: var(--smaller-font-size);
+  }
+
+  .testimonial__description {
+    font-size: var(--tiny-font-size);
   }
 }

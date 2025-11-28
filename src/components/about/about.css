@@ -3,12 +3,16 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   column-gap: 4rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .about__img {
   width: 350px;
+  max-width: 100%;
+  height: auto;
   border-radius: 1.5rem;
   justify-self: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .about__info {
@@ -19,7 +23,8 @@
 
 .about__box {
   background-color: var(--container-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  transition: border-color 0.3s ease;
   border-radius: 0.75rem;
   background: transparent;
   text-align: center;
@@ -44,10 +49,30 @@
 .about__description {
   padding: 0 4rem 0 0;
   margin-bottom: var(--mb-2-5);
+  transition: all 0.3s ease-in-out;
+}
+
+.about__data {
+  transition: all 0.3s ease-in-out;
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
+/* For small laptop (1024px) */
+@media screen and (max-width: 1024px) {
+  .about__container {
+    column-gap: 3rem;
+  }
+
+  .about__img {
+    width: 300px;
+  }
+
+  .about__description {
+    padding: 0 2rem 0 0;
+  }
+}
+
+/* For large devices (992px) */
 @media screen and (max-width: 992px) {
   .about__container {
     grid-template-columns: 1fr;
@@ -60,6 +85,7 @@
 
   .about__box {
     padding: 0.75rem 0.5rem;
+    transition: all 0.3s ease-in-out;
   }
 
   .about__data {
@@ -76,7 +102,52 @@
   }
 }
 
-/* For medium devices */
+/* For tablet devices (768px) */
+@media screen and (max-width: 768px) {
+  .about__container {
+    row-gap: 2rem;
+  }
+
+  .about__img {
+    width: 200px;
+  }
+
+  .about__description {
+    padding: 0 2rem;
+  }
+
+  .about__info {
+    grid-template-columns: repeat(3, 120px);
+    gap: 0.75rem;
+  }
+}
+
+/* For mobile devices (480px) */
+@media screen and (max-width: 480px) {
+  .about__img {
+    width: 180px;
+  }
+
+  .about__description {
+    padding: 0 1rem;
+    font-size: var(--small-font-size);
+  }
+
+  .about__info {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .about__box {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .about__icon {
+    font-size: 1.25rem;
+  }
+}
+
+/* For medium devices (576px) */
 @media screen and (max-width: 576px) {
   .about__info {
     grid-template-columns: repeat(3, 1fr);
@@ -87,9 +158,25 @@
   }
 }
 
-/* For small devices */
+/* For small devices (350px) */
 @media screen and (max-width: 350px) {
+  .about__img {
+    width: 150px;
+  }
+
   .about__info {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__box {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .about__title {
+    font-size: var(--smaller-font-size);
+  }
+
+  .about__subtitle {
+    font-size: var(--tiny-font-size);
   }
 }

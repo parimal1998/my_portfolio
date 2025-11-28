@@ -1,5 +1,6 @@
 .home__container {
   row-gap: 7rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .home__content {
@@ -7,21 +8,26 @@
   padding-top: 5.5rem;
   column-gap: 2rem;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .home__social {
   display: grid;
   grid-template-columns: max-content;
   row-gap: 1rem;
+  transition: all 0.4s ease-in-out;
 }
 
 .home__social-icon {
   font-size: 1.25rem;
   color: var(--title-color);
+  transition: all 0.3s ease-in-out;
 }
 
 .home__social-icon:hover {
   color: var(--title-color-dark);
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
 }
 
 .home__title {
@@ -63,11 +69,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+  box-shadow: inset 0 0 0 9px var(--image-shadow-color);
+  transition: all 0.3s ease-in-out;
   order: 1;
   justify-self: center;
   width: 300px;
   height: 300px;
+  max-width: 100%;
   animation: profile__animate 8s ease-in-out infinite 1s;
 }
 
@@ -116,46 +124,65 @@
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
+/* For small laptop (1024px) */
+@media screen and (max-width: 1024px) {
+  .home__content {
+    grid-template-columns: 100px repeat(2, 1fr);
+    column-gap: 1.5rem;
+    padding-top: 5rem;
+  }
+
+  .home__img {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* For large devices (992px) */
 @media screen and (max-width: 992px) {
   .home__content {
     grid-template-columns: 100px repeat(2, 1fr);
     column-gap: 1.25rem;
+    padding-top: 4.5rem;
   }
 
   .home__hand {
     width: 26px;
     height: 26px;
+    transition: all 0.3s ease-in-out;
   }
 
   .home__subtitle {
     padding-left: 3.75rem;
     margin-bottom: var(--mb-1);
+    transition: all 0.3s ease-in-out;
   }
 
   .home__subtitle::before {
     width: 42px;
     top: 0.8rem;
+    transition: all 0.3s ease-in-out;
   }
 
   .home__description {
     max-width: initial;
     margin-bottom: var(--mb-2-5);
-    color: hsl(0, 0%, 20%); /* Darker color */
-    background-color: #ffff; /* Background color */
-    padding: 1rem; /* Add padding for better spacing */
-    border-radius: 0.5rem; /* Optional: Add rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    z-index: 10; /* Bring it to the front */
-    position: relative; /* Required for z-index to work */
-    min-width: 300px; /* Ensure it has enough space */
-    min-height: 100px; /* Ensure it has enough space */
+    color: var(--title-color);
+    background-color: var(--container-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px var(--box-shadow-color);
+    z-index: 10;
+    position: relative;
+    min-width: 300px;
+    min-height: 100px;
+    transition: all 0.3s ease-in-out;
   }
 
   .home__img {
     width: 250px;
     height: 250px;
-    box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
+    box-shadow: inset 0 0 0 8px var(--image-shadow-color);
   }
 
   .home__scroll {
@@ -163,19 +190,48 @@
   }
 }
 
-/* For medium devices */
+/* For tablet devices (768px) */
 @media screen and (max-width: 768px) {
+  .home__container {
+    row-gap: 4rem;
+  }
+
   .home__content {
     grid-template-columns: 0.5fr 3fr;
     padding-top: 3.5rem;
+    column-gap: 1rem;
+  }
+
+  /* Mobile: Social icons vertical and to the left of profile image */
+  .home__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    column-gap: 0;
+    align-self: center;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .home__social-icon {
+    font-size: 1.5rem;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
   }
 
   .home__img {
     order: initial;
     justify-self: initial;
-    box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+    box-shadow: inset 0 0 0 6px var(--image-shadow-color);
     width: 200px;
     height: 200px;
+    align-self: center;
+    transition: all 0.4s ease-in-out;
   }
 
   .home__data {
@@ -185,17 +241,120 @@
   .home__scroll {
     display: none;
   }
+
+  .home__subtitle {
+    padding-left: 3rem;
+  }
+
+  .home__subtitle::before {
+    width: 35px;
+  }
+
+  .home__description {
+    min-width: auto;
+    padding: 0.875rem;
+  }
 }
 
-/* For small devices */
-@media screen and (max-width: 350px) {
+/* For mobile devices (480px) */
+@media screen and (max-width: 480px) {
+  .home__container {
+    row-gap: 3rem;
+  }
+
+  /* Mobile: Use grid to place social icons (vertical) and image side by side */
+  .home__content {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    padding-top: 2.5rem;
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+  }
+
+  /* Social icons: vertical layout, left of image */
+  .home__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    column-gap: 0;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .home__social-icon {
+    font-size: 1.5rem;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Profile image: right of social icons */
   .home__img {
     width: 180px;
     height: 180px;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    transition: all 0.4s ease-in-out;
+  }
+
+  /* Data section: spans full width below */
+  .home__data {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    text-align: center;
+  }
+
+  .home__subtitle {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .home__subtitle::before {
+    display: none;
+  }
+
+  .home__description {
+    min-width: auto;
+    padding: 0.75rem;
+    text-align: center;
+  }
+
+  .home__hand {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* For small devices (350px) */
+@media screen and (max-width: 350px) {
+  .home__img {
+    width: 160px;
+    height: 160px;
   }
 
   .home__hand {
     width: 22px;
     height: 22px;
+  }
+
+  .home__title {
+    font-size: var(--h1-font-size);
+  }
+
+  .home__description {
+    padding: 0.5rem;
+    font-size: var(--small-font-size);
   }
 }

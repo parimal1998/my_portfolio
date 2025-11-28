@@ -36,7 +36,7 @@ const Footer = () => {
                 </div>
 
                 <span className='footer__copy'>
-                    &#169; All rigths reserved
+                    &#169; All rights reserved to Parimal Sawan.
                 </span>
             </div>
         </footer>

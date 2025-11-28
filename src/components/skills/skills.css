@@ -2,11 +2,19 @@
   grid-template-columns: repeat(2, 350px);
   column-gap: 3rem;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .skills__container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .skills__content {
   background-color: var(--container-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease-in-out;
   background: transparent;
   padding: 2rem 4rem;
   border-radius: 1.25rem;
@@ -52,15 +60,64 @@
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
+/* For small laptop (1024px) */
+@media screen and (max-width: 1024px) {
+  .skills__container {
+    grid-template-columns: repeat(2, 300px);
+    column-gap: 2rem;
+  }
+
+  .skills__content {
+    padding: 2rem 3rem;
+  }
+}
+
+/* For large devices (992px) */
 @media screen and (max-width: 992px) {
   .skills__container {
     grid-template-columns: max-content;
     row-gap: 2rem;
   }
+
+  .skills__content {
+    padding: 2rem 3rem;
+  }
 }
 
-/* For medium devices */
+/* For tablet devices (768px) */
+@media screen and (max-width: 768px) {
+  .skills__container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .skills__content {
+    padding: 1.75rem 2rem;
+  }
+
+  .skills__box {
+    column-gap: 2rem;
+  }
+}
+
+/* For mobile devices (480px) */
+@media screen and (max-width: 480px) {
+  .skills__content {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .skills__box {
+    column-gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skills__group {
+    min-width: 120px;
+  }
+}
+
+/* For medium devices (576px) */
 @media screen and (max-width: 576px) {
   .skills__container {
     grid-template-columns: 1fr;
@@ -71,13 +128,24 @@
   }
 }
 
-/* For small devices */
+/* For small devices (350px) */
 @media screen and (max-width: 350px) {
   .skills__box {
     column-gap: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills__group {
+    width: 100%;
+    max-width: 200px;
   }
 
   .skills__name {
     font-size: var(--small-font-size);
+  }
+
+  .skills__content {
+    padding: 1.25rem 1rem;
   }
 }
