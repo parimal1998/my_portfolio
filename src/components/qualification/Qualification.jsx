@@ -61,37 +61,8 @@ const Qualification = () => {
                                 <span className="qualification__line"></span>
                             </div>
                         </div>
+
                         
-                         <div className="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                        
-                            <div>
-                                <h3 className="qualification__title">Senior Data Analyst</h3>
-                                <span className="qualification__subtitle">Merkle Inc. (a Dentsu Company)</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> Sept 2021 -Aug 2024
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">Bachelor Of Engineering In Information Technology</h3>
-                                <span className="qualification__subtitle">Mumbai University</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> Jan 2019 - Oct 2021
-                                </div>
-                            </div>
-
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
 
                             <div></div>
                         </div>
@@ -119,8 +90,46 @@ const Qualification = () => {
                         }
                     >
                     </div>
+                    <div className="qualification__data">
+                            <div></div>
 
-                    
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                        
+                            <div>
+                                <h3 className="qualification__title">Senior Data Analyst</h3>
+                                <span className="qualification__subtitle">Merkle Inc. (a Dentsu Company)</span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i> Sept 2021 -Aug 2024
+                                </div>
+                            </div>
+                    </div>
+
+                        <div className="qualification__sections">
+                    <div
+                        className={
+                            toggleState === 1
+                                ? "qualification__content qualification__content-active"
+                                : "qualification__content"
+                        }
+                    >
+                         <div className="qualification__data">
+                            <div>
+                                <h3 className="qualification__title">Bachelor Of Engineering In Information Technology</h3>
+                                <span className="qualification__subtitle">Mumbai University</span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i> Jan 2019 - Oct 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                        </div>
+                        </div> 
                 </div>
             </div>
         </section>

@@ -64,10 +64,10 @@ const Data = () => {
     color: "var(--title-color)",
     border: "none",
     padding: "10px",
-    background: "transparent",
     display: "inline-block",
     borderRadius: "5px",
     backgroundColor: "var(--container-color)",
+    background: "transparent",
     transition: "background-color 0.3s ease, color 0.3s ease"
     }}>
             I am a Data Analyst with strong skills in Python, SQL, and data visualisation, passionate about turning complex datasets into clear, actionable insights. With experience across analytics, automation, and BI reporting, I enjoy solving real business problems and building data-driven solutions that create measurable impact.

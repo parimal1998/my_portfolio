@@ -17,7 +17,7 @@ const Footer = () => {
                     </li>
 
                     <li>
-                        <a href="#testimonials" className="footer__link">Testimonials</a>
+                        <a href="#testimonial container section" className="footer__link">Testimonials</a>
                     </li>
                 </ul>
 
@@ -36,7 +36,7 @@ const Footer = () => {
                 </div>
 
                 <span className='footer__copy'>
-                    &#169; All rights reserved to Parimal Sawan.
+                    &#169; All rights reserved to Parimal Sawant.
                 </span>
             </div>
         </footer>

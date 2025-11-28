@@ -20,12 +20,12 @@ const About = () => {
 
                     <p className="about__description" style={{
     color: "var(--title-color)",
-    background: "transparent",
     border: "1px solid var(--border-color)",
     padding: "10px",
     display: "inline-block",
     borderRadius: "5px",
     backgroundColor: "var(--container-color)",
+    background: "transparent",
     transition: "background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease"
     }}>
 
