@@ -8,7 +8,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_w45ynow', 'template_9w21wje')//, form.current,// 'Q29OeRzuWRf0O4rog')
+        emailjs.sendForm('service_oc47sl9', 'template_1gj10ku')//, form.current,// 'Q29OeRzuWRf0O4rog')
         e.target.reset()
     };
 
@@ -26,7 +26,7 @@ const Contact = () => {
                             <i className="bx bx-mail-send contact__card-icon"></i>
 
                             <h3 className="contact__card-title">Email</h3>
-                            <span className="contact__card-data">parmar.bindisha01@gmail.com</span>
+                            <span className="contact__card-data">parimalsawant0@gmail.com</span>
 
                             <a href="mailto:sagarbarateirl@gmail.com" className="contact__button">
                                 Write me <i className='bx bx-right-arrow-alt contact__button-icon'></i>
@@ -37,9 +37,9 @@ const Contact = () => {
                             <i className="bx bxl-whatsapp contact__card-icon"></i>
 
                             <h3 className="contact__card-title">Whatsapp</h3>
-                            <span className="contact__card-data">+353 894972907</span>
+                            <span className="contact__card-data">+353 894582570</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=353894489363&text=Hello, more information!" className="contact__button">
+                            <a href="https://api.whatsapp.com/send?phone=353894582576&text=Hello, more information!" className="contact__button">
                                 Write me <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                             </a>
                         </div>
@@ -48,9 +48,9 @@ const Contact = () => {
                             <i className="bx bxl-linkedin-square contact__card-icon"></i>
 
                             <h3 className="contact__card-title">LinkedIn</h3>
-                            <span className="contact__card-data">Bindisha Parmar</span>
+                            <span className="contact__card-data">Parimal Sawant</span>
 
-                            <a href="https://www.linkedin.com/in/bindisha-parmar-a8144858" className="contact__button">
+                            <a href="https://www.linkedin.com/in/parimal-sawant/" className="contact__button">
                                 Write me <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                             </a>
                         </div>

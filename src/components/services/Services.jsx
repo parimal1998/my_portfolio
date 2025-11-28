@@ -18,7 +18,7 @@ const Services = () => {
                     <div>
                         <i className="uil uil-web-grid services__icon"></i>
                         <h3 className="services__title">
-                            Front  <br /> End Developer
+                            Data Analyst
                         </h3>
                     </div>
 
@@ -31,34 +31,34 @@ const Services = () => {
                         <div className="services__modal-content">
                             <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
-                            <h3 className="services__modal-title">Application Designer</h3>
+                            <h3 className="services__modal-title">Data Analyst</h3>
                             <p className="services__modal-description">
-                                Service with more than 4 years of experience. Providing quality work to clients and companies.
+                                With more than 3 years of experience. Delivering data-driven insights and high-quality analytics solutions to clients and organizations.
                             </p>
 
                             <ul className="services__modal-services grid">
                                 <li className="services__modal-service">
                                     <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">I develop the user interface.</p>
+                                    <p className="services__modal-info">I collect, clean, and analyze complex datasets.</p>
                                 </li>
 
                                 <li className="services__modal-service">
                                     <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">Web page development.</p>
+                                    <p className="services__modal-info">I build dashboards and visualizations for decision-making.</p>
                                 </li>
 
                                 <li className="services__modal-service">
                                     <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">I develop web-based mapping applications. </p>
+                                    <p className="services__modal-info">I develop automated reports using SQL and Python.</p>
                                 </li>
                                 <li className="services__modal-service">
                                     <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">I create ux element interactions.</p>
+                                    <p className="services__modal-info">I identify trends, patterns, and business opportunities.</p>
                                 </li>
 
                                 <li className="services__modal-service">
                                     <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">I position your company brand.</p>
+                                    <p className="services__modal-info">I translate data insights into clear, actionable recommendations.</p>
                                 </li>
 
                             </ul>
@@ -66,11 +66,13 @@ const Services = () => {
                     </div>
                 </div>
 
+                
+
                 <div className="services__content">
                     <div>
-                        <i className="uil uil-arrow services__icon"></i>
+                        <i className="uil uil-edit services__icon"></i>
                         <h3 className="services__title">
-                            Backend  <br /> Developer
+                            Data Engineer
                         </h3>
                     </div>
 
@@ -83,90 +85,35 @@ const Services = () => {
                         <div className="services__modal-content">
                             <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
-                            <h3 className="services__modal-title">Service Designer</h3>
+                            <h3 className="services__modal-title">Data Engineer</h3>
                             <p className="services__modal-description">
-                                Service with more than 5 years of experience.Providing quality work to clients and companies.
+                            Actively building strong skills in modern data engineering tools and practices. Focused on creating reliable, scalable, and efficient data solutions. 
                             </p>
 
                             <ul className="services__modal-services grid">
                                 <li className="services__modal-service">
                                     <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">I develop roboust backend application.</p>
-                                </li>
-                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">GIS developer.</p>
-                                </li>
-                                <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">Nodejs developer.</p>
+                                    <p className="services__modal-info">I design and work with basic data pipelines using Python & SQL.</p>
                                 </li>
 
                                 <li className="services__modal-service">
                                     <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">I know low level design.</p>
+                                    <p className="services__modal-info">I practice building ETL workflows for clean and structured data.</p>
                                 </li>
 
                                 <li className="services__modal-service">
                                     <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">I position your company brand.</p>
+                                    <p className="services__modal-info">I work with databases to store, manage, and query data efficiently.</p>
                                 </li>
 
                                 <li className="services__modal-service">
                                     <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">Design and mockups of products for companies.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="services__content">
-                    <div>
-                        <i className="uil uil-edit services__icon"></i>
-                        <h3 className="services__title">
-                            Devops <br /> Engineer
-                        </h3>
-                    </div>
-
-                    <span className="services__button" onClick={() => toggleTab(3)}>
-                        View More
-                        <i className="uil uil-arrow-right services__button-icon"></i>
-                    </span>
-
-                    <div className={toggleState === 3 ? "services__modal active-modal" : "services__modal"}>
-                        <div className="services__modal-content">
-                            <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
-
-                            <h3 className="services__modal-title">Devops Engineer</h3>
-                            <p className="services__modal-description">
-                                I am doing masters in software design with cloud native 
-                            </p>
-
-                            <ul className="services__modal-services grid">
-                                <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">I have deployed maven application in aws envirnment and autoscaled it on the basis of requests explore all aws features</p>
+                                    <p className="services__modal-info">I explore cloud-based tools for data ingestion and processing.</p>
                                 </li>
 
                                 <li className="services__modal-service">
                                     <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">Deployed application using docker compose, docker swarm and implemented ELK stack to monitor the application</p>
-                                </li>
-
-                                <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">Deployed application using kubernetes and scaled the pods and explored minikube for basic applicaiton</p>
-                                </li>
-
-                                <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">Learning all devops skills Linux, CICD, Ansible,Jenkins and manymore </p>
-                                </li>
-
-                                <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">In accenture worked on the aws and used the cloudwatch, develped the ASG groups for the banking applicaions</p>
+                                    <p className="services__modal-info">I transform raw data into optimized formats for analytics.</p>
                                 </li>
                             </ul>
                         </div>

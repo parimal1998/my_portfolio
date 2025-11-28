@@ -2,7 +2,7 @@
 
 import './about.css'
 import AboutImg from '../../assets/Parimal_DP.png'
-import CV from '../../assets/BINDISHA_PARMAR_CV_SOFTWARE.pdf'
+import CV from '../../assets/Parimal_Sawant_Data_Analyst.pdf'
 import Info from './Info'
 
 const About = () => {
@@ -20,17 +20,15 @@ const About = () => {
 
                     <p className="about__description" style={{
     color: "black",
-    
+    background: "transparent",
     border: "1px black", // Border around the text
     padding: "10px", // Space inside the box
     display: "inline-block", // Prevents full-width stretching
     borderRadius: "5px", // Rounded corners
-    backgroundColor: "white", }}>
+    backgroundColor: "#ffff", }}>
 
-                        Frontend and Backend Developer, I create web pages with UI / UX user interface, building and maintaining the server-side logic ,
-                        Database Integration, API Development & Integration, Frameworks Usage, Security Implementation, Testing and Debugging, DevOps & Deployment.
-                         I have years of experience and many clients are happy with the projects 
-                         carried out.
+                <p style={{textAlign: "justify"}}>I am a Data Analyst with strong skills in Python, SQL, and data visualisation, passionate about turning complex datasets into clear, actionable insights. With experience across analytics, automation, and BI reporting, 
+                I enjoy solving real business problems and building data-driven solutions that create measurable impact.</p>
                     </p>
 
                     <a download="" href={CV} className="button button--flex">

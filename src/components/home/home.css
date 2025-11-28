@@ -59,7 +59,7 @@
 }
 
 .home__img {
-  background: url(../../assets/Parimal_DP.png);
+  background: url(../../assets/Parimal_DP2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -142,7 +142,7 @@
     max-width: initial;
     margin-bottom: var(--mb-2-5);
     color: hsl(0, 0%, 20%); /* Darker color */
-    background-color: white; /* White background */
+    background-color: #ffff; /* Background color */
     padding: 1rem; /* Add padding for better spacing */
     border-radius: 0.5rem; /* Optional: Add rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */

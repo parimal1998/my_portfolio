@@ -4,7 +4,7 @@ const Data = () => {
     return (
         <div className="home__data">
             <h1 className="home__title">
-               Bindisha Parmar  
+               Parimal Sawant
                 <svg
                     width="36"
                     height="36"
@@ -57,22 +57,18 @@ const Data = () => {
             </h1>
 
             <h3 className="home__subtitle">
-                Software Developer
+                Senior Data Analyst
             </h3>
 
             <p className="home__description" style={{
     color: "black",
-    
-    border: "0.5px solid black", // Border around the text
-    padding: "10px", // Space inside the box
+    border: "none", // Border around the text
+    padding: "10px",
+    background: "transparent", // Space inside the box
     display: "inline-block", // Prevents full-width stretching
     borderRadius: "5px", // Rounded corners
-    backgroundColor: "white"}}>
-            Passionate and collaborative Software Developer with 5+ years of experience as a 
-            full-stack developer. Passionate about designing, developing, and maintaining 
-            innovative projects. Relevant experience in Java, Spring Boot, GIS, Cloud Native Computing, DevOps Technologies, with a focus on writing 
-            clean, modern, and scalable code. Always eager to learn, share knowledge, and 
-            build user-friendly solutions! 🚀
+    backgroundColor: "#ffff"}}>
+            I am a Data Analyst with strong skills in Python, SQL, and data visualisation, passionate about turning complex datasets into clear, actionable insights. With experience across analytics, automation, and BI reporting, I enjoy solving real business problems and building data-driven solutions that create measurable impact.
                </p>
 
             <a href="#contact" className="button button--flex">

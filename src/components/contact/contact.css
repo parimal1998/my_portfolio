@@ -22,6 +22,7 @@
   background-color: var(--container-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem;
+  background: transparent;
   border-radius: 0.75rem;
   text-align: center;
 }
@@ -81,7 +82,8 @@
   width: 100%;
   height: 100%;
   border: 2px solid rgba(0, 0, 0, 0.3);
-  background: none;
+  background-color: #ffff;
+  background: transparent;
   color: var(--text-color);
   outline: none;
   border-radius: 0.75rem;

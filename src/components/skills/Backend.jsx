@@ -3,7 +3,7 @@ import React from 'react'
 const Backend = () => {
     return (
         <div className="skills__content">
-            <h3 className="skills__title">Backend SKills</h3>
+            <h3 className="skills__title">Data Visualisation</h3>
 
             <div className="skills__box">
                 <div className="skills__group">
@@ -11,8 +11,8 @@ const Backend = () => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">NodeJS</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className="skills__name">Tableau</h3>
+                            <span className="skills__level">Advanced</span>
                         </div>
                     </div>
 
@@ -20,8 +20,8 @@ const Backend = () => {
                         <i className='bx bx-badge-check' ></i>
 
                         <div>
-                            <h3 className="skills__name">Java</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className="skills__name">Power BI</h3>
+                            <span className="skills__level">Advanced</span>
                         </div>
                     </div>
 
@@ -38,8 +38,8 @@ const Backend = () => {
                         <i className='bx bx-badge-check' ></i>
 
                         <div>
-                            <h3 className="skills__name">Python</h3>
-                            <span className="skills__level">Basic</span>
+                            <h3 className="skills__name">AWS QuickSight</h3>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                 </div>
@@ -49,8 +49,8 @@ const Backend = () => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">MySQL</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className="skills__name">Matplotlib</h3>
+                            <span className="skills__level">Advanced</span>
                         </div>
                     </div>
 
@@ -60,8 +60,17 @@ const Backend = () => {
                         <i className='bx bx-badge-check' ></i>
 
                         <div>
-                            <h3 className="skills__name">SQL</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className="skills__name">Plotly</h3>
+                            <span className="skills__level">Advanced</span>
+                        </div>
+                    </div>
+
+                    <div className="skills__data">
+                        <i className='bx bx-badge-check' ></i>
+
+                        <div>
+                            <h3 className="skills__name">Seaborn</h3>
+                            <span className="skills__level">Advanced</span>
                         </div>
                     </div>
                 </div>

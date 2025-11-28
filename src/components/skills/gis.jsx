@@ -4,7 +4,7 @@ import React from 'react'
 const gis = () => {
     return (
         <div className="skills__content">
-            <h3 className="skills__title">GIS SKills</h3>
+            <h3 className="skills__title">Tools / Others</h3>
 
             <div className="skills__box">
                 <div className="skills__group">
@@ -12,7 +12,7 @@ const gis = () => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Open Layers</h3>
+                            <h3 className="skills__name">Github</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
@@ -21,7 +21,7 @@ const gis = () => {
                         <i className='bx bx-badge-check' ></i>
 
                         <div>
-                            <h3 className="skills__name">Geoserver</h3>
+                            <h3 className="skills__name">Visual Studio Code</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
@@ -33,7 +33,7 @@ const gis = () => {
                         <i className='bx bx-badge-check' ></i>
 
                         <div>
-                            <h3 className="skills__name">QGIS</h3>
+                            <h3 className="skills__name">ETL</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const gis = () => {
                         <i className='bx bx-badge-check' ></i>
 
                         <div>
-                            <h3 className="skills__name">ArcGIS</h3>
+                            <h3 className="skills__name">Data Pipeline</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>

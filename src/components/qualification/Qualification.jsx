@@ -11,7 +11,7 @@ const Qualification = () => {
     return (
         <section className="qualification section" id="portfolio">
             <h2 className="section__title">Qualification</h2>
-            <span className="section__subtitle">My personel journey</span>
+            <span className="section__subtitle">My Personel Journey</span>
 
             <div className="qualification__container container">
                 <div className="qualification__tabs">
@@ -49,7 +49,7 @@ const Qualification = () => {
                     >
                          <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Masters In Software Design With Cloud Native (Level 9)</h3>
+                                <h3 className="qualification__title">Masters Of Science In Data Analytics (Level 9)</h3>
                                 <span className="qualification__subtitle">Technological University Shenon, Athlone (AIT)</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i> 2024 - 2025
@@ -69,20 +69,20 @@ const Qualification = () => {
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
                             </div>
-
+                        
                             <div>
-                                <h3 className="qualification__title">Project Associate & Software Developer</h3>
-                                <span className="qualification__subtitle">Cognizant Technology Solution</span>
+                                <h3 className="qualification__title">Senior Data Analyst</h3>
+                                <span className="qualification__subtitle">Merkle Inc. (a Dentsu Company)</span>
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> Oct 2021 -May 2024
+                                    <i className="uil uil-calendar-alt"></i> Sept 2021 -Aug 2024
                                 </div>
                             </div>
                         </div>
 
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Software Developer</h3>
-                                <span className="qualification__subtitle">BCITS Pvt. Ltd.</span>
+                                <h3 className="qualification__title">Bachelor Of Engineering In Information Technology</h3>
+                                <span className="qualification__subtitle">Mumbai University</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i> Jan 2019 - Oct 2021
                                 </div>
@@ -92,22 +92,8 @@ const Qualification = () => {
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
                             </div>
-                        </div>
-                        <div className="qualification__data">
+
                             <div></div>
-
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 className="qualification__title">Masters in Computer Applications</h3>
-                                <span className="qualification__subtitle">Rajasthan Technical University</span>
-                                {/* <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2020 - 2021
-                                </div> */}
-                            </div>
                         </div>
 
                         {/* <div className="qualification__data">
@@ -132,56 +118,6 @@ const Qualification = () => {
                                 : "qualification__content"
                         }
                     >
-                       
-
-                        <div className="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 className="qualification__title">Project Associate & Software Developer</h3>
-                                <span className="qualification__subtitle">Cognizant Technology Solution</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> Oct 2021 -May 2024
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">Software Developer</h3>
-                                <span className="qualification__subtitle">BCITS Pvt. Ltd.</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> Jan 2019 - Oct 2021
-                                </div>
-                            </div>
-
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <div className="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 className="qualification__title">GIS Intern</h3>
-                                <span className="qualification__subtitle">Sysglob Software Solutions Pvt. Ltd.</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> July 2018 -  Dec 2018
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     

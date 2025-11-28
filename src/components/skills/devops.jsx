@@ -3,7 +3,7 @@ import React from 'react'
 const devops = () => {
     return (
         <div className="skills__content">
-            <h3 className="skills__title">Devops Skills</h3>
+            <h3 className="skills__title">Databases</h3>
 
             <div className="skills__box">
                 <div className="skills__group">
@@ -11,8 +11,8 @@ const devops = () => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Linux</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className="skills__name">MySQL</h3>
+                            <span className="skills__level">Advanced</span>
                         </div>
                     </div>
 
@@ -20,8 +20,8 @@ const devops = () => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Docker</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className="skills__name">PostgreSQL</h3>
+                            <span className="skills__level">Advanced</span>
                         </div>
                     </div>
 
@@ -29,7 +29,7 @@ const devops = () => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Kubernetes</h3>
+                            <h3 className="skills__name">MongoDB</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
@@ -40,7 +40,16 @@ const devops = () => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">AWS</h3>
+                            <h3 className="skills__name">AWS Redshift</h3>
+                            <span className="skills__level">Advanced</span>
+                        </div>
+                    </div>
+
+                    <div className="skills__data">
+                        <i className='bx bx-badge-check'></i>
+
+                        <div>
+                            <h3 className="skills__name">BigQuery</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
@@ -49,16 +58,7 @@ const devops = () => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Ansible</h3>
-                            <span className="skills__level">Basic</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i className='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">CI CD</h3>
+                            <h3 className="skills__name">PL/SQL</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
